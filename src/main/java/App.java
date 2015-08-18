@@ -5,25 +5,25 @@ import static spark.Spark.*;
 import java.util.ArrayList;
 
 public class App {
-  public static void main(String[] args){
+  public static void main(String[] args) {
     staticFileLocation("/public");
-      String layout = "templates/layout.vtl";
+    String layout = ("templates/layout.vtl");
 
     get("/", (request, response) -> {
       HashMap<String, Object> model = new HashMap<String, Object>();
       model.put("template", "templates/index.vtl");
       return new ModelAndView(model, layout);
-      }, new VelocityTemplateEngine());
+    }, new VelocityTemplateEngine());
 
 
-    post("/task", (request, response) -> {
+    post("/Task", (request, response) -> {
       HashMap<String, Object> model = new HashMap<String, Object>();
 
       String description = request.queryParams("description");
       Task newTask = new Task(description);
-      request.session().attribute("task", newTask);
+      request.session().attribute("Task", newTask);
 
-      model.put("template", "templates/index.vtl");
+      model.put("template", "templates/success.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
   }

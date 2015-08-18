@@ -20,9 +20,7 @@ public class AppTest extends FluentTest {
   @Test
   public void rootTest() {
       goTo("http://localhost:4567/");
-      assertThat(pageSource()).contains("Task list!");
-      fill("#description").with("Mow the lawn");
-      submit(".btn");
-      assertThat(pageSource()).contains("Your task has been saved.");
+      assertThat(pageSource()).contains("Task List!");
+    
   }
 }

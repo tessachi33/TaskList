@@ -11,7 +11,7 @@ public class TaskTest {
 
 
   @Test
- public void task_instantiatesWithDescription_true() {
+  public void myTask_instantiatesWithDescription_true() {
    Task myTask = new Task("Mow the lawn");
    assertEquals("Mow the lawn", myTask.getDescription());
  }
