@@ -16,47 +16,47 @@ public class Task {
     instances.add(this);
     mId = instances.size();
   }
-
-  public String getDescription() {
-    return mDescription;
-  }
-
-  public boolean isCompleted() {
-    return mCompleted;
-  }
-
-  public LocalDateTime getCreatedAt() {
-    return mCreatedAt;
-  }
-
-  public int getId() {
-    return mId;
-  }
-
-  public void completeTask() {
-    mCompleted = true;
-  }
-
-  public static ArrayList<Task> all() {
-    return instances;
-  }
-
-  public static Task find(int id) {
-    try {
-      return instances.get(id - 1);
-    } catch (IndexOutOfBoundsException e) {
-      return null;
-    }
-  }
-
-  public static void clear() {
-    instances.clear();
-  }
-
-  instances.add(this);
-  mId = instances.size();
-  
-  public static Task find(int id) {
-    return instances.get(id - 1);
-  }
+  // 
+  // public String getDescription() {
+  //   return mDescription;
+  // }
+  //
+  // public boolean isCompleted() {
+  //   return mCompleted;
+  // }
+  //
+  // public LocalDateTime getCreatedAt() {
+  //   return mCreatedAt;
+  // }
+  //
+  // public int getId() {
+  //   return mId;
+  // }
+  //
+  // public void completeTask() {
+  //   mCompleted = true;
+  // }
+  //
+  // public static ArrayList<Task> all() {
+  //   return instances;
+  // }
+  //
+  // public static Task find(int id) {
+  //   try {
+  //     return instances.get(id - 1);
+  //   } catch (IndexOutOfBoundsException e) {
+  //     return null;
+  //   }
+  // }
+  //
+  // public static void clear() {
+  //   instances.clear();
+  // }
+  //
+  // instances.add(this);
+  // mId = instances.size();
+  //
+  // public static Task find(int id) {
+  //   return instances.get(id - 1);
+  // }
 }
