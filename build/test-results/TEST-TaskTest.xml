@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TaskTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2015-08-19T16:55:31" hostname="epicodus-106.local" time="0.073">
+<testsuite name="TaskTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2015-08-20T01:06:32" hostname="Tessas-MBP" time="0.086">
   <properties/>
-  <testcase name="find_returnsNullWhenNoTaskFound_null" classname="TaskTest" time="0.0"/>
-  <testcase name="clear_emptiesAllTasksFromArrayList" classname="TaskTest" time="0.07"/>
+  <testcase name="find_returnsNullWhenNoTaskFound_null" classname="TaskTest" time="0.001"/>
+  <testcase name="clear_emptiesAllTasksFromArrayList" classname="TaskTest" time="0.082"/>
   <testcase name="isCompleted_isFalseAfterInstantiaon_false" classname="TaskTest" time="0.0"/>
   <testcase name="task_instantiatesWithDescription_true" classname="TaskTest" time="0.0"/>
   <testcase name="task_instantiatesCorrectly_true" classname="TaskTest" time="0.0"/>

@@ -1,9 +1,15 @@
-import java.time.LocalDateTime;
+import org.fluentlenium.adapter.FluentTest;
+import org.junit.ClassRule;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
-import org.junit.*;
-import static org.junit.Assert.*;
+import static org.fluentlenium.core.filter.FilterConstructor.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class TaskTest {
+  @Rule
+  public ClearRule clearRule = new ClearRule();
 
   @Test
   public void task_instantiatesCorrectly_true() {
